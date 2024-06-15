@@ -7,9 +7,11 @@ const input = ref('');
 </script>
 
 <template>
-  <div>
+  <div :is="activeComponent">
     A Page: Use this input for test keep alive
-    <input v-model="input" />
+    <KeepAlive>
+      <input :is="activeComponent" v-model="input" />
+    </KeepAlive>
     <button @click="$router.go(-1)">Go Back</button>
   </div>
 </template>

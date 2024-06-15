@@ -1,5 +1,5 @@
 <template>
   <NuxtLayout>
-    <NuxtPage :keepalive="{ exclude: ['cpage', 'dpage'] }" />
+    <NuxtPage :keepalive="{ exclude: ['dpage'] }" />
   </NuxtLayout>
 </template>
